@@ -1,6 +1,5 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
   "cleanUrls": true,
-  "redirects": [],
-  "headers": []
+  "routes": [{ "src": "/", "dest": "/index.html" }]
 }
+
