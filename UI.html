@@ -1,0 +1,11 @@
+<select id="mbtiSelect">
+    <option value="INTJ">INTJ</option>
+    <option value="ENTP">ENTP</option>
+    <option value="INFJ">INFJ</option>
+    <option value="ESFP">ESFP</option>
+</select>
+<script>
+document.getElementById("mbtiSelect").addEventListener("change", function() {
+    console.log("選択されたMBTI: ", this.value);
+});
+</script>
