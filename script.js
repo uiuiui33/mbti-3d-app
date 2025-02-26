@@ -1,4 +1,4 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.155/build/three.module.min.js';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.155/build/three.module.js';
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.155/examples/jsm/controls/OrbitControls.js';
 
 console.log("Three.js is successfully imported!");
@@ -16,7 +16,7 @@ controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 controls.rotateSpeed = 0.5;
 
-// 3Dオブジェクトの作成（例：正四面体）
+// 3Dオブジェクトの作成（正四面体）
 const geometry = new THREE.TetrahedronGeometry(1);
 const material = new THREE.MeshBasicMaterial({ color: 0x0077ff, wireframe: true });
 const tetrahedron = new THREE.Mesh(geometry, material);
