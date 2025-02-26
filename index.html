@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>MBTI 3D Visualizer</title>
-    <script type="module" src="script.js"></script>
-    <style> body { margin: 0; } </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <canvas id="threeCanvas"></canvas>
+
+    <!-- Three.js をCDNから読み込む -->
+    <script type="module">
+        import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.155/build/three.module.min.js';
+        console.log("Three.js is successfully loaded!");
+    </script>
+
+    <script src="./script.js"></script>
 </body>
 </html>
